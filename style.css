@@ -1,0 +1,306 @@
+@font-face {
+    font-family: 'CircularStd-Medium';
+    src: url('fonts/CircularStd-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'CircularStd-Book';
+    src: url('fonts/CircularStd-Book.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.footer, .header {
+    height: 500px;
+}
+html {
+    box-sizing: border-box;
+  }
+  
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+body {
+    overflow-x: hidden;
+  }
+  
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+li, ul {
+    list-style: disc;
+    list-style-type: disc;
+  }
+hr {
+    border: none;
+  }
+input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.skin-care {
+    height: 852px;
+    display: flex;
+}
+.skin-care__concern-selector {
+    background-color: #FFFDE5;
+    max-width: 960px;
+    width: 100%;
+    height: 852px;
+    position: relative;
+}
+.skin-care__concern-wrapper {
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+.skin-care__swap-block {
+    max-width: 670px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+}
+.skin-care__swap-button {
+    padding: 16.5px 18px;
+    display: flex;
+    background-color: #EC1661;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 15px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+.skin-care__swap-button:hover {
+    background-color: #b50442;
+} 
+.skin-care__swap-button_back {
+    background: none;
+    color: #EC1661;
+}
+.skin-care__swap-button_back:hover {
+    background: none;
+}
+.skin-care__choose-text, .skin-care__selector-button, .skin-care__title, .skin-care__guide  {
+    color: #EC1661;
+}
+.skin-care__selector-button {
+    font-family: 'CircularStd-Medium';
+    max-width: 450px;
+    width: 100%;
+    height: 59px;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 450;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    gap: 12px;
+    text-transform: none;
+    position: relative;
+}
+.skin-care__selector-circle {
+    height: 28px;
+    max-width: 28px;
+    width: 100%;
+    background-color: #EC1661;
+    border-radius: 50%;
+    margin-left: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skin-care__selector-button--active {
+    background-color: #EC1661;
+    color: #fff;
+}
+.skin-care__selector-circle--active {
+    background-color: #fff;
+}
+.skin-care__selector-text {
+    margin-top: 5px;
+}
+.skin-care__guide {
+    font-size: 17px;
+    font-family: 'CircularStd-Book';
+    letter-spacing: 7px;
+    padding: 20px;
+    border: #EC1661 1px solid;
+    max-width: 185px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.skin-care__title {
+    font-size: 52px;
+    font-family: 'CircularStd-Medium';
+    text-transform: none;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: opa;
+}
+.skin-care__choose-text {
+    font-family: 'CircularStd-Medium';
+    font-weight: 450;
+    font-size: 28px;
+    text-transform: none;
+    margin-bottom: 15px;
+}
+.skin-care__line {
+    max-width: 84px;
+    width: 100%;
+    height: 8px;
+    background-color: #FFE6EF;
+}
+.skin-care__line--active {
+    background-color: #FF97BB;
+}
+.skin-care__line-block {
+    display: flex;
+    gap: 20px;
+    max-width: 276px;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+.skin-care__image-block {
+    max-width: 960px;
+    width: 100%;
+    height: 852px;
+    display: none;
+}
+.skin-care__image-block--active {
+    display: block;
+}
+.skin-care__image-block1 {
+    background-color: #bf97df;
+}
+.skin-care__image-block2 {
+    background-color: #eca6dc;
+}
+
+
+
+.skin-care__fade-in-title {
+    animation: skin-care__fade-in-title 0.4s forwards;
+  }
+  
+  .skin-care__fade-out-title {
+    animation: skin-care__fade-out-title 0.4s forwards;
+  }
+  
+  @keyframes skin-care__fade-in-title {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes skin-care__fade-out-title {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(10px); }
+  }
+
+
+
+
+  .skin-care__fade-out-option {
+    animation: skin-care__fade-out-option 0.4s forwards;
+  }
+  
+  .skin-care__fade-in-option {
+    animation: skin-care__fade-in-option 0.4s forwards;
+  }
+  .skin-care__fade-in {
+    animation: skin-care__fade-in 0.4s forwards;
+  }
+  .skin-care__fade-out {
+    animation: skin-care__fade-out 0.4s forwards;
+    position: absolute;
+    left: 11.4%;
+  }
+  .skin-care__fade-out-line {
+    animation: skin-care__fade-out 0.4s forwards;
+  }
+  .skin-care__fade-in-move {
+    animation: skin-care__fade-in-move 0.4s forwards;
+  }
+  .skin-care__fade-out-move {
+    animation: skin-care__fade-out-move 0.4s forwards;
+  }
+  .skin-care__fade-in-move-new {
+    animation: skin-care__fade-in-move-new 0.4s forwards;
+  }
+  .skin-care__fade-out-move-new {
+    animation: skin-care__fade-out-move-new 0.4s forwards;
+  }
+  @keyframes skin-care__fade-out-option {
+    from { opacity: 1; transform: translate(0, 0); }
+    to { opacity: 0; transform: translate(30px, 20px); }
+  }
+
+  @keyframes skin-care__fade-in-option {
+    from { opacity: 0; transform: translate(30px, 50px); }
+    to { opacity: 1; transform: translate(0px, 0px); }
+  }
+  @keyframes skin-care__fade-in-move {
+    from {transform: translateY(0);}
+    to {transform: translateY(-132%);}
+  }
+  @keyframes skin-care__fade-out-move {
+    from {transform: translateY(-100%);}
+    to {transform: translateY(0%);}
+  }
+  @keyframes skin-care__fade-out {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }
+  
+  @keyframes skin-care__fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @keyframes skin-care__fade-in-move-new {
+    from { opacity: 0; transform: translateY(-132%); }
+    to   { opacity: 1; transform: translateY(-132%); }
+  }
+  @keyframes skin-care__fade-out-move-new {
+    from { opacity: 1; transform: translateY(-132%); }
+    to   { opacity: 0; transform: translateY(-132%); }
+  }
+
+
+
+  
